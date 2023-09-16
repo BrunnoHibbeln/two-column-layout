@@ -3,7 +3,11 @@ import Image from 'next/image'
 import { Open_Sans as OpenSans, Raleway } from 'next/font/google'
 
 import Logo from './images/logo.svg'
+import Arrow from './images/icon-arrow.svg'
+import Quote from './images/quote.png'
+import Avatar from './images/avatar-testimonial.jpg'
 import Illustration1 from './images/illustration-1.svg'
+import Illustration2 from './images/illustration-2.svg'
 
 const openSans = OpenSans({
   subsets: ['latin'],
@@ -17,9 +21,9 @@ const raleway = Raleway({
 export default function Home() {
   return (
     <main
-      className={`${openSans.variable} ${raleway.variable} flex flex-col gap-32 px-8 py-10`}
+      className={`${openSans.variable} ${raleway.variable} flex flex-col gap-32 py-10`}
     >
-      <header className="flex flex-row items-center justify-between">
+      <header className="flex flex-row items-center justify-between px-8">
         <Image className="h-6 w-20" src={Logo} alt="Logo icon" />
         <section className="flex flex-row justify-center gap-5 font-raleway text-body">
           <a className="hover:text-blue" href="#">
@@ -34,7 +38,7 @@ export default function Home() {
         </section>
       </header>
 
-      <section className="grid grid-cols-1 grid-rows-2 gap-10">
+      <section className="grid grid-cols-1 grid-rows-2 gap-10 px-8">
         <section className="flex flex-col gap-5">
           <article className="flex flex-col gap-5 text-center font-open-sans">
             <h2 className="text-2xl font-black">
@@ -64,18 +68,84 @@ export default function Home() {
         />
       </section>
 
-      <section>
-        <section>
-          <article></article>
-          <article></article>
+      <section className="grid grid-cols-1 grid-rows-2 gap-10 px-8">
+        <section className="flex flex-col gap-5">
+          <article className="flex flex-col gap-5 text-center">
+            <h2 className="font-raleway text-xl font-black">
+              Stay productive, wherever you are
+            </h2>
+            <p className="font-open-sans">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p className="font-open-sans">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </article>
+          <section className="flex flex-col items-center justify-center gap-10 py-7">
+            <a
+              className="flex w-40 flex-row items-center justify-center gap-2 border-b border-green pb-2 text-green hover:brightness-125"
+              href="#"
+            >
+              <button>See how works</button>
+              <Image className="h-5 w-5" src={Arrow} alt="Arrow icon" />
+            </a>
+            <article className="flex w-full flex-col justify-center gap-5 px-8">
+              <Image className="h-4 w-4" src={Quote} alt="Quote icon" />
+              <p className="font-open-sans text-sm font-medium leading-6">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <section className="flex flex-row items-center gap-4">
+                <Image
+                  className="h-8 w-8 rounded-full"
+                  src={Avatar}
+                  alt="Avatar Photo"
+                />
+                <article className="flex flex-col">
+                  <strong className="font-open-sans text-sm">
+                    Kyle Burton
+                  </strong>
+                  <span className="font-open-sans text-xs">
+                    Founder & CEO, Huddle
+                  </span>
+                </article>
+              </section>
+            </article>
+          </section>
         </section>
-        <Image />
+        <Image
+          className="row-start-1"
+          src={Illustration2}
+          alt="Illustration image"
+        />
       </section>
 
-      <section>
-        <article></article>
-        <section></section>
+      <section className="flex w-full flex-col gap-8 bg-light-blue px-8 py-16 text-grayish">
+        <article className="flex flex-col gap-5 text-center">
+          <h2 className="font-raleway text-2xl font-bold">
+            Get early access today
+          </h2>
+          <p className="font-open-sans">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </article>
+        <section className="flex flex-col items-center justify-center gap-5 font-raleway">
+          <input
+            className="w-4/5 rounded-md border px-5 py-3"
+            type="text"
+            placeholder="email@exemple.com"
+          ></input>
+          <button className="w-4/5 rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 xl:hover:brightness-150">
+            Get Started For Free
+          </button>
+        </section>
       </section>
+
       <footer>
         <section>
           <Image />
