@@ -7,12 +7,13 @@ import Instagram from './icons/Instagram'
 import Email from '../images/icon-email.svg'
 import Phone from '../images/icon-phone.svg'
 import Logo from './icons/Logo'
+import Anchor from './Anchor'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-12 bg-dark-blue px-8 py-16 font-open-sans text-grayish">
-      <Logo />
-      <section className="flex flex-col gap-5">
+    <footer className="flex flex-col gap-12 bg-dark-blue px-8 py-16 font-open-sans text-grayish md:px-20 lg:flex-row lg:justify-around">
+      <section className="flex flex-col gap-6">
+        <Logo />
         <section className="flex flex-row items-center gap-5">
           <Image src={Phone} alt="Phone Icon" />
           <span>Phone: +1-543-123-4567</span>
@@ -22,32 +23,18 @@ export default function Footer() {
           <span>example@fylo.com</span>
         </section>
       </section>
-      <section className="flex flex-col gap-3">
-        <a className="hover:text-blue" href="#">
-          About Us
-        </a>
-        <a className="hover:text-blue" href="#">
-          Jobs
-        </a>
-        <a className="hover:text-blue" href="#">
-          Press
-        </a>
-        <a className="hover:text-blue" href="#">
-          Blog
-        </a>
+      <section className="flex flex-col gap-3 lg:pt-20">
+        <Anchor text="About Us" />
+        <Anchor text="Jobs" />
+        <Anchor text="Press" />
+        <Anchor text="Blog" />
       </section>
-      <section className="flex flex-col gap-5">
-        <a className="hover:text-blue" href="#">
-          Contact Us
-        </a>
-        <a className="hover:text-blue" href="#">
-          Terms
-        </a>
-        <a className="hover:text-blue" href="#">
-          Privacy
-        </a>
+      <section className="flex flex-col gap-5 lg:pt-20">
+        <Anchor text="Contact Us" />
+        <Anchor text="Terms" />
+        <Anchor text="Privacy" />
       </section>
-      <section className="flex w-full flex-row items-center justify-center gap-6">
+      <section className="flex w-full flex-row items-center justify-center gap-6 lg:h-min lg:w-min lg:pt-20">
         <Facebook />
         <Twitter />
         <Instagram />
