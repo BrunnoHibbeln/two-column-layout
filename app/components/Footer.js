@@ -11,7 +11,7 @@ import Anchor from './Anchor'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-12 bg-dark-blue px-8 py-16 font-open-sans text-grayish md:px-20 lg:flex-row lg:justify-around">
+    <footer className="flex flex-col gap-12 bg-dark-blue px-8 py-16 font-open-sans text-grayish duration-300 sm:px-24 md:px-32 lg:flex-row lg:justify-between lg:px-20">
       <section className="flex flex-col gap-6">
         <Logo />
         <section className="flex flex-row items-center gap-5">

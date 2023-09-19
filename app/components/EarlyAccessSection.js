@@ -1,6 +1,6 @@
 export default function EarlyAccessSection() {
   return (
-    <section className="flex w-full flex-col gap-8 bg-light-blue px-8 py-16 text-grayish duration-300 sm:px-24 md:px-20 lg:flex-row lg:justify-between lg:px-32 lg:py-24">
+    <section className="flex w-full flex-col gap-8 bg-light-blue px-8 py-16 text-grayish duration-300 sm:px-24 md:px-32 lg:flex-row lg:justify-between lg:px-20 lg:py-24">
       <article className="flex flex-col gap-5 text-center lg:w-2/5 lg:text-left">
         <h2 className="font-raleway text-2xl font-bold lg:text-3xl">
           Get early access today
