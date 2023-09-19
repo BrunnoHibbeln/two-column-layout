@@ -2,17 +2,17 @@ import Image from 'next/image'
 
 import { Open_Sans as OpenSans, Raleway } from 'next/font/google'
 
-import Logo from './images/logo.svg'
-import Arrow from './images/icon-arrow.svg'
-import Quote from './images/quote.png'
 import Avatar from './images/avatar-testimonial.jpg'
+import Arrow from './images/icon-arrow.svg'
 import Email from './images/icon-email.svg'
-import Phone from './images/icon-phone.svg'
 import Facebook from './images/icon-facebook.svg'
-import Twitter from './images/icon-twitter.svg'
 import Instagram from './images/icon-instagram.svg'
+import Phone from './images/icon-phone.svg'
+import Twitter from './images/icon-twitter.svg'
 import Illustration1 from './images/illustration-1.svg'
 import Illustration2 from './images/illustration-2.svg'
+import Logo from './images/logo.svg'
+import Quote from './images/quote.png'
 
 const openSans = OpenSans({
   subsets: ['latin'],
