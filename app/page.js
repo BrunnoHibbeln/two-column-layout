@@ -6,6 +6,11 @@ import Logo from './images/logo.svg'
 import Arrow from './images/icon-arrow.svg'
 import Quote from './images/quote.png'
 import Avatar from './images/avatar-testimonial.jpg'
+import Email from './images/icon-email.svg'
+import Phone from './images/icon-phone.svg'
+import Facebook from './images/icon-facebook.svg'
+import Twitter from './images/icon-twitter.svg'
+import Instagram from './images/icon-instagram.svg'
 import Illustration1 from './images/illustration-1.svg'
 import Illustration2 from './images/illustration-2.svg'
 
@@ -146,27 +151,51 @@ export default function Home() {
         </section>
       </section>
 
-      <footer>
-        <section>
-          <Image />
-          <span></span>
-          <span></span>
+      <footer className="flex flex-col gap-12 bg-dark-blue px-8 py-16 font-open-sans text-grayish">
+        <section className="flex flex-col gap-5">
+          <Image className="pb-5" src={Logo} alt="Logo Icon" />
+          <section className="flex flex-row items-center gap-5">
+            <Image src={Phone} alt="Phone Icon" />
+            <span>Phone: +1-543-123-4567</span>
+          </section>
+          <section className="flex flex-row items-center gap-5">
+            <Image src={Email} alt="Email Icon" />
+            <span>example@fylo.com</span>
+          </section>
         </section>
-        <section>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <section className="flex flex-col gap-3">
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
         </section>
-        <section>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <section className="flex flex-col gap-5">
+          <a href="#">Contact Us</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
         </section>
-        <section>
-          <Image />
-          <Image />
-          <Image />
+        <section className="flex w-full flex-row items-center justify-center gap-6">
+          <a href="#">
+            <Image
+              className="h-8 w-8 rounded-full border border-white p-1.5"
+              src={Facebook}
+              alt="Facebook Icon"
+            />
+          </a>
+          <a href="#">
+            <Image
+              className="h-8 w-8 rounded-full border border-white p-1.5"
+              src={Twitter}
+              alt="Twitter Icon"
+            />
+          </a>
+          <a href="#">
+            <Image
+              className="h-8 w-8 rounded-full border border-white p-1.5"
+              src={Instagram}
+              alt="Instagram Icon"
+            />
+          </a>
         </section>
       </footer>
     </main>
