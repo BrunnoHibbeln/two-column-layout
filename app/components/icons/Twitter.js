@@ -2,7 +2,7 @@ export default function Twitter() {
   return (
     <a href="#">
       <svg
-        className="h-8 w-8 rounded-full border border-white p-1.5 hover:border-blue hover:fill-blue"
+        className="h-8 w-8 rounded-full border border-white p-1.5 duration-200 hover:border-blue hover:fill-blue"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="#fff"

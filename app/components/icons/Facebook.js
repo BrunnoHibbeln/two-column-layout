@@ -2,7 +2,7 @@ export default function Facebook() {
   return (
     <a href="#">
       <svg
-        className="h-8 w-8 rounded-full border border-white p-1 hover:border-blue hover:fill-blue"
+        className="h-8 w-8 rounded-full border border-white p-1 duration-200 hover:border-blue hover:fill-blue"
         xmlns="http://www.w3.org/2000/svg"
         fill="#fff"
         width="800px"
