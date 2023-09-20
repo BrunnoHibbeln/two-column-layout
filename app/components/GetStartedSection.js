@@ -3,7 +3,7 @@ import Illustration1 from '../images/illustration-1.svg'
 
 export default function GetStartedSection() {
   return (
-    <section className="flex flex-col-reverse gap-10 px-8 duration-300 sm:px-24 md:px-32 lg:flex-row lg:items-center lg:px-20">
+    <section className="flex flex-col-reverse gap-10 bg-mobile bg-contain bg-local bg-bottom bg-no-repeat px-8 pb-32 duration-300 sm:px-24 md:px-32 lg:flex-row lg:items-center lg:bg-desktop lg:px-20 lg:pb-80">
       <section className="flex flex-col gap-5 text-dark-blue">
         <article className="flex flex-col gap-5 text-center font-open-sans lg:text-left">
           <h2 className="text-2xl font-black lg:font-raleway lg:text-4xl lg:font-extrabold lg:leading-[3.5rem]">

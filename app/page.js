@@ -18,10 +18,10 @@ const raleway = Raleway({
 export default function Home() {
   return (
     <main
-      className={`${openSans.variable} ${raleway.variable} flex flex-col gap-32 lg:gap-20`}
+      className={`${openSans.variable} ${raleway.variable} flex flex-col bg-white`}
     >
       <Header />
-      <section className="flex flex-col gap-32 duration-300 lg:gap-80">
+      <section className="flex flex-col pt-32 duration-300 lg:pt-20">
         <GetStartedSection />
         <BenefitsSection />
       </section>

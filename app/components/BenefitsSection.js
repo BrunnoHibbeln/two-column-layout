@@ -7,7 +7,7 @@ import Quote from '../images/quote.png'
 
 export default function BenefitsSection() {
   return (
-    <section className="flex flex-col-reverse gap-10 px-8 duration-300 sm:px-24 md:px-32 lg:flex-row lg:items-center lg:px-20">
+    <section className="bg-light-grayish flex flex-col-reverse gap-10 px-8 pb-32 duration-300 sm:px-24 md:px-32 lg:flex-row lg:items-center lg:px-20 lg:pb-20">
       <section className="flex flex-col gap-5 text-dark-blue lg:gap-0">
         <article className="flex flex-col gap-5 text-center lg:text-left">
           <h2 className="font-raleway text-xl font-black lg:text-4xl lg:font-extrabold">
@@ -24,13 +24,13 @@ export default function BenefitsSection() {
         </article>
         <section className="flex w-full flex-col items-center justify-center gap-10 py-7 lg:items-start">
           <a
-            className="flex w-[10.5rem] flex-row items-center justify-center gap-2 border-b border-green pb-2 text-green hover:brightness-125"
+            className="flex w-[10.8rem] flex-row items-center justify-center gap-2 border-b border-green pb-2 text-green duration-300 hover:brightness-125"
             href="#"
           >
             <button>See how Fylo works</button>
             <Image className="h-5 w-5" src={Arrow} alt="Arrow icon" />
           </a>
-          <article className="flex w-full flex-col justify-center gap-5 rounded-xl p-8 shadow-xl lg:w-3/4">
+          <article className="flex w-full flex-col justify-center gap-5 rounded-lg bg-white p-8 shadow-xl shadow-gray lg:w-3/4">
             <Image className="h-4 w-4" src={Quote} alt="Quote icon" />
             <p className="font-open-sans text-sm font-medium leading-6">
               Fylo has improved our team productivity by an order of magnitude.
