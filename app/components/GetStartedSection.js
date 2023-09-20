@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Illustration1 from '../images/illustration-1.svg'
+import Form from './Form'
 
 export default function GetStartedSection() {
   return (
@@ -15,16 +16,14 @@ export default function GetStartedSection() {
             and co-workers.
           </p>
         </article>
-        <section className="flex flex-col items-center justify-center gap-5 font-raleway lg:w-11/12 lg:flex-row">
-          <input
-            className="w-full rounded-md border px-5 py-3"
-            type="text"
-            placeholder="Enter your email"
-          ></input>
-          <button className="w-full rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 lg:w-2/4 lg:hover:brightness-125">
-            Get Started
-          </button>
-        </section>
+        <Form
+          sectionClasses="lg:w-11/12 lg:flex-row"
+          inputClasses="w-full"
+          placeholder="Enter your email"
+          buttonClasses="w-full"
+          buttonText="Get Started"
+          errorColor="text-red-500"
+        />
       </section>
       <Image
         className="h-auto lg:w-2/4"
