@@ -7,7 +7,7 @@ import Quote from '../images/quote.png'
 
 export default function BenefitsSection() {
   return (
-    <section className="bg-light-grayish flex flex-col-reverse gap-10 px-8 pb-32 duration-300 sm:px-24 md:px-32 lg:flex-row lg:items-center lg:px-20 lg:pb-20">
+    <section className="flex flex-col-reverse gap-10 bg-light-grayish px-8 pb-32 duration-300 sm:px-24 md:px-32 lg:flex-row lg:items-center lg:px-20 lg:pb-20">
       <section className="flex flex-col gap-5 text-dark-blue lg:gap-0">
         <article className="flex flex-col gap-5 text-center lg:text-left">
           <h2 className="font-raleway text-xl font-black lg:text-4xl lg:font-extrabold">

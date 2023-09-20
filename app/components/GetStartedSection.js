@@ -21,7 +21,7 @@ export default function GetStartedSection() {
             type="text"
             placeholder="Enter your email"
           ></input>
-          <button className="w-full rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 lg:w-2/4 lg:hover:brightness-150">
+          <button className="w-full rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 lg:w-2/4 lg:hover:brightness-125">
             Get Started
           </button>
         </section>

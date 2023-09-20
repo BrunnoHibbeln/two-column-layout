@@ -17,7 +17,7 @@ export default function EarlyAccessSection() {
           type="text"
           placeholder="email@exemple.com"
         ></input>
-        <button className="w-4/5 rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 md:hover:brightness-150 lg:w-2/4">
+        <button className="w-4/5 rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 md:hover:brightness-125 lg:w-2/4">
           Get Started For Free
         </button>
       </section>
