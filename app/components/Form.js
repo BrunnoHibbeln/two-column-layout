@@ -24,7 +24,7 @@ export default function Form({
 
     if (!emailRegex.test(inputValue)) {
       setError('Please check your email')
-      setInputProps('border border-red-500')
+      setInputProps('border-2 border-red-500')
     } else {
       setError('')
       setInputProps('')
@@ -56,7 +56,7 @@ export default function Form({
         </div>
 
         <button
-          className={`${buttonClasses} rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 lg:w-2/4 lg:hover:brightness-125`}
+          className={`${buttonClasses} min-w-fit rounded-md bg-blue px-5 py-3 font-bold text-grayish duration-200 active:brightness-75 lg:w-2/4 lg:hover:brightness-125`}
           type="submit"
         >
           {buttonText}
