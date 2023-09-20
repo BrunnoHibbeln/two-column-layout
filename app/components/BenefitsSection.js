@@ -24,7 +24,7 @@ export default function BenefitsSection() {
         </article>
         <section className="flex w-full flex-col items-center justify-center gap-10 py-7 lg:items-start">
           <a
-            className="flex w-[10.8rem] flex-row items-center justify-center gap-2 border-b border-green pb-2 text-green duration-300 hover:brightness-125"
+            className="flex min-w-fit flex-row items-center justify-center gap-2 border-b border-green pb-2 text-green duration-300 hover:brightness-125"
             href="#"
           >
             <button>See how Fylo works</button>
